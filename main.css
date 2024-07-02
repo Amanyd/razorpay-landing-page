@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    /* transform: scale(1); */
+    transition: all 0.1s;
+}
+.flms{
+    filter: opacity(0);
+}
+.card:hover .flms{
+    filter: opacity(0.3);
+}
+.card:hover{
+    /* transform: scale(1.005); */
+    filter: drop-shadow(0 0 20px gray);
+}
+.card:hover .icn{
+    filter:contrast(300%)
+}
+.blackcard:hover{
+    /* transform: scale(1.005); */
+    filter: drop-shadow(0 0 30px black);
+}
+.blackcard:hover .flms{
+    filter: opacity(0.1);
+    transition: 0.2s;
+}
+.blackcard:hover .cool{
+    stroke-opacity: 0;
+}
+.whitecool{
+    stroke-opacity: 0.3;
+}
+.card:hover .whitecool{
+    stroke-opacity: 0;
+}
+.core{
+    background-size: 100% 100%;
+    padding-top: 12rem;
+}
+.wc:hover{
+    filter:drop-shadow(0 0 10px black)
+}
+.companiesList{
+    animation:10s infinite linear moveCompany;
+  }
+
+@keyframes moveCompany {
+0%{
+    top:0;
+}
+100%{
+    top:-50%;
+}
+}
+
+.ctaSection{
+    background-size: 100% 100%;
+}
